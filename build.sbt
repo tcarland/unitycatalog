@@ -590,7 +590,7 @@ lazy val spark = (project in file("connectors/spark"))
       )
     },
     // Assembly / shading configuration
-    // Produce a shaded fat JAR as the default package output
+    // Produce a shaded uber JAR as the default package output
     Compile / packageBin := assembly.value,
     assembly / logLevel := Level.Warn,
     assembly / test := {},
